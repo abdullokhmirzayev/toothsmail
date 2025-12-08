@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tooth smile</title>
+	<link rel="shortcut icon" href="./image/icon-2.png" type="image/x-icon">
+
+	<!-- FontAwesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar">
+		<div class="container nav-container">
+
+			<a href="#">
+				<div class="brand">
+					<i class="fas fa-tooth"></i>
+					<span>ToothSmile</span>
+				</div>
+			</a>
+
+			<div class="menu-icon" id="menuBtn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+
+			<ul class="nav-links" id="navLinks">
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#testimonials">TESTIMONIALS</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<div style="height:80px; display: none;" id="mobile-menu"></div>
+
+	<!-- HERO section -->
+	<section class="home-section" id="home">
+
+		<!-- SLIDER IMAGES -->
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="./image/1st-slider.jpg" alt="Slider 1">
+			</div>
+
+			<div class="carousel-item">
+				<img src="./image/2nd-slider.jpg" alt="Slider 2">
+			</div>
+
+			<!-- SLIDER BUTTONS -->
+			<button class="slider-btn left-btn">
+				<i class="fa-solid fa-chevron-left"></i>
+			</button>
+
+			<button class="slider-btn right-btn">
+				<i class="fa-solid fa-chevron-right"></i>
+			</button>
+
+		</div>
+
+
+	</section>
+
+
+	<!-- Service section -->
+	<section class="services-section" id="services">
+		<div class="container services-container">
+			<div class="services-grid">
+
+				<div class="service-item">
+					<img src="./image/icon-1.png" alt="">
+					<div>
+						<h5>Root Canal Specialist</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div class="service-item">
+					<img src="./image/icon-2.png" alt="">
+					<div>
+						<h5>Alignment Specialist</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div class="service-item">
+					<img src="./image/icon-3.png" alt="">
+					<div>
+						<h5>Cosmetic Dentistry</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div class="service-item">
+					<img src="./image/icon-4.png" alt="">
+					<div>
+						<h5>Oral Hygiene Experts</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div class="service-item">
+					<img src="./image/icon-5.png" alt="">
+					<div>
+						<h5>Live Dental Advisory</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+				<div class="service-item">
+					<img src="./image/icon-6.png" alt="">
+					<div>
+						<h5>Cavity Inspection</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- TESTIMONIALS SECTION -->
+	<section class="testimonials-section" id="testimonials">
+		<div class="container">
+
+			<h2 class="testimonials-title">Testimonials</h2>
+
+			<button class="test-btn left">
+				<i class="fa-solid fa-chevron-left"></i>
+			</button>
+
+			<button class="test-btn right">
+				<i class="fa-solid fa-chevron-right"></i>
+			</button>
+
+			<div class="testimonials-flex">
+				<div class="testimonial-item">
+					<h3>The best clinic in town</h3>
+					<p>Voluptate tempore aperiam explicabo doloremque sunt possimus neque quo hic repudiandae fugit tenetur.</p>
+				</div>
+
+				<div class="testimonial-item">
+					<h3>Quick, easy & reliable</h3>
+					<p>Doloremque ipsum dolor sit amet voluptate tempore aperiam explicabo doloremque adipisicing elit.</p>
+				</div>
+
+				<div class="testimonial-item">
+					<h3>The true professionals</h3>
+					<p>Consectetur adipisicing elit. Voluptate tempore aperiam lorem ipsum dolor sit amet.</p>
+				</div>
+
+				<!-- <div class="testimonial-item">
+					<h3>Modern equipment</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div> -->
+
+				<!-- <div class="testimonial-item">
+					<h3>Trusted by patients</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div> -->
+
+			</div>
+
+		</div>
+	</section>
+
+	<section id="services-2" class="services-section-2">
+		<div class="container">
+
+			<ul class="services-picker">
+				<li><button class="activeServicePicker">Root Canal Specialist</button></li>
+				<li><button>Alignment Specialist</button></li>
+				<li><button>Cosmetic Dentistry</button></li>
+				<li><button>Live Dental Advisory</button></li>
+			</ul>
+
+			<!-- TAB 1 -->
+			<div class="service-tab activeServiceTab">
+				<div class="service-row">
+					<div class="service-col">
+						<h3 class="service2-title">
+							Fast & professional treatments for every patient
+						</h3>
+						<p class="service2-p">
+							Duis sed odio sit amet nibh vulputate cursus a sit am maur Morbi accumsan sed ipsum velit. Nam nec tellus
+							a od tincidunt auctor a ornare odio. Alia ludus animal ius te, ea amet necessitatibus vix. Solum persius
+							voluptaria ad nostro quis odio scriptorem ex vim.
+						</p>
+					</div>
+					<div class="service-col">
+						<img src="image/service-img-1.jpg" service2Img" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- TAB 2 -->
+			<div class="service-tab">
+				<div class="service-row">
+					<div class="service-col">
+						<h3 class="service2-title">
+							Easiest way to do something truly important for your smile
+						</h3>
+						<p class="service2-p">
+							Duis sed odio sit amet nibh vulputate cursus a sit am maur Morbi accumsan sed ipsum velit. Nam nec tellus
+							a od tincidunt auctor a ornare odio. Alia ludus animal ius te, ea amet necessitatibus vix. Solum persius
+							voluptaria ad nostro quis odio scriptorem ex vim.
+						</p>
+					</div>
+					<div class="service-col">
+						<img src="image/service-img-2.jpg" class="service2Img" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- TAB 3 -->
+			<div class="service-tab">
+				<div class="service-row">
+					<div class="service-col">
+						<h3 class="service2-title">
+							Fast & professional treatments for every patient
+
+						</h3>
+						<p class="service2-p">
+							Duis sed odio sit amet nibh vulputate cursus a sit am maur Morbi accumsan sed ipsum velit. Nam nec tellus
+							a od tincidunt auctor a ornare odio. Alia ludus animal ius te, ea amet necessitatibus vix. Solum persius
+							voluptaria ad nostro quis odio scriptorem ex vim.
+						</p>
+					</div>
+					<div class="service-col">
+						<img src="Design/images/service-img-3.jpg" class="service2Img" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!-- TAB 4 -->
+			<div class="service-tab">
+				<div class="service-row">
+					<div class="service-col">
+						<h3 class="service2-title">
+							Easiest way to do something truly important for your smile
+						</h3>
+						<p class="service2-p">
+							Duis sed odio sit amet nibh vulputate cursus a sit am maur Morbi accumsan sed ipsum velit. Nam nec tellus
+							a od tincidunt auctor a ornare odio. Alia ludus animal ius te, ea amet necessitatibus vix. Solum persius
+							voluptaria ad nostro quis odio scriptorem ex vim.
+						</p>
+					</div>
+					<div class="service-col">
+						<img src="Design/images/service-img-4.jpg" class="service2Img" alt="">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+</body>
+
+</html>
