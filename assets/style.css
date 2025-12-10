@@ -56,7 +56,7 @@ ul li {
 	max-width: var(--container-width);
 	width: 90%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 15px;
 }
 
 /* ===========================
@@ -321,17 +321,27 @@ ul li {
 }
 
 /* ========= SERVICES SECTION ========= */
+/* TAB PICKER */
+
 .services-section-2 {
-	padding: 60px 0;
+	padding: 50px 0px;
 }
 
-/* TAB PICKER */
 .services-picker {
 	display: flex;
-	justify-content: space-around;
-	gap: 30px;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+	gap: 10px;
 	padding-bottom: 7px;
-	border-bottom: 2px solid #eee;
+	border-bottom: 2px solid #f2c9c9;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.services-picker li {
+	flex: 0 0 25%;
+	text-align: center;
 }
 
 .services-picker button {
@@ -344,10 +354,23 @@ ul li {
 	padding-bottom: 12px;
 	cursor: pointer;
 	transition: 0.3s;
+	position: relative;
 }
 
+/* Hover effekti */
 .services-picker button:hover {
 	color: var(--primary-orange);
+}
+
+/* Aktiv border pastdan chiqadigan qismi */
+.services-picker button.activeServicePicker::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -9px;
+	width: 100%;
+	height: 3px;
+	background: var(--primary-orange);
 }
 
 .activeServicePicker {
@@ -422,11 +445,16 @@ ul li {
 
 	.service-row {
 		flex-direction: column;
+		gap: 20px;
 		text-align: center;
 	}
 
 	.service-col {
 		width: 100%;
+	}
+
+	.services-picker li {
+		flex: 1 1 50% !important;
 	}
 }
 
@@ -466,14 +494,15 @@ ul li {
 		display: block;
 	}
 
-	/* HERO SECTION mobile */
-	.hero-title {
-		font-size: 34px;
+	.services-grid {
+		grid-template-columns: 1fr;
 	}
 
-	.hero-overlay {
-		left: 5%;
-		max-width: 90%;
+	.test-btn.left {
+		left: 5px;
+	}
+	.test-btn.right {
+		right: 5px;
 	}
 }
 
@@ -492,21 +521,33 @@ ul li {
 	}
 	.testimonial-item {
 		flex: 1 1 100%; /* 1 ustun */
-		max-width: 100%;
 	}
 
 	.testimonial-item h3 {
 		font-size: 20px;
 	}
 
+	/* Wrap automatically */
 	.services-picker {
 		flex-wrap: wrap;
-		gap: 20px;
+		border-bottom: none;
+		gap: 15px;
 	}
+
+	/* Har bir tugma bitta qatorda */
+	.services-picker li {
+		width: 100%;
+		border-bottom: 2px solid #f2c9c9;
+		padding-bottom: 8px;
+	}
+
+	/* Active border pozitsiyasi */
+	.services-picker button.activeServicePicker::after {
+		bottom: -10px;
+		height: 2px;
+	}
+
 	.services-picker button {
 		font-size: 16px;
-	}
-	.service2-title {
-		font-size: 26px;
 	}
 }
